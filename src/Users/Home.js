@@ -8,7 +8,7 @@ import history from "../icons/history.png";
 import login from "../icons/User.png";
 import cart from "../icons/cart.png";
 import Cart from "./Cart";
-import { useEffect, useState,useContext } from "react";
+import { useEffect, useState} from "react";
 import Lottie from 'react-lottie';
 import animationData from '../lotties/97443-loading-gray.json';
 

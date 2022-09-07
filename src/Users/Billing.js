@@ -1,8 +1,8 @@
 import React from 'react'
-import { useEffect, useState,useContext } from "react";
+import { useEffect, useState } from "react";
 import axios from "../axios";
 import '../App.css';
-import { Link, useNavigate,useParams } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import StripeCheckout from 'react-stripe-checkout';
 import Lottie from 'react-lottie';
 import animationData from '../lotties/97443-loading-gray.json'
@@ -78,7 +78,7 @@ let makePayment =async (token) => {
     token
   }
   try {  
-   const res= await axios.post(`/cartPayment`,body,{
+        await axios.post(`/cartPayment`,body,{
         headers: {
           'Authorization': `${localStorage.getItem("react_app_token")}`,
         }

@@ -1,8 +1,8 @@
-
+import React from "react";
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Users/Home';
-import Cart from './Users/Cart';
+//import Cart from './Users/Cart';
 import Adminhome from './Admin/Adminhome';
 import Userslogin from './Login/Userslogin';
 import Createproduct from './Admin/CreateProduct';

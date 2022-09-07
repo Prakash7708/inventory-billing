@@ -1,15 +1,15 @@
 import React from 'react'
 import './Create.css';
 import{useFormik} from 'formik';
-import { useNavigate } from 'react-router-dom';
-import {useState}from 'react';
+//import { useNavigate } from 'react-router-dom';
+//import {useState}from 'react';
 import axios from '../axios';
 import { Link } from 'react-router-dom';
 
 function Createproduct() {
   
-  let navigate=useNavigate();
-  let [loading,setLoading]=useState([]);
+  // let navigate=useNavigate();
+  // let [loading,setLoading]=useState([]);
   
   let formik=useFormik({
       initialValues:{

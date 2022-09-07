@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from "../axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 import Lottie from 'react-lottie';
 import animationData from '../lotties/97443-loading-gray.json'
 

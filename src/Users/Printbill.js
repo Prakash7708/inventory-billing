@@ -1,11 +1,11 @@
 import React from 'react'
-import { useEffect, useState,useContext,useRef } from "react";
+import { useEffect, useState,useRef } from "react";
 import axios from "../axios";
 import '../App.css';
-import { Link, useNavigate,useParams } from "react-router-dom";
-import StripeCheckout from 'react-stripe-checkout';
-import Lottie from 'react-lottie';
-import animationData from '../lotties/97443-loading-gray.json'
+import {  useNavigate,useParams } from "react-router-dom";
+// import StripeCheckout from 'react-stripe-checkout';
+// import Lottie from 'react-lottie';
+// import animationData from '../lotties/97443-loading-gray.json'
 import { useReactToPrint } from "react-to-print";
 function Printbill() {
 
