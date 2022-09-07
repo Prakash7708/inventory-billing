@@ -1,7 +1,6 @@
 import React from 'react'
 import Addedcarts from './Addedcarts';
 import '../App.css';
-import logo from "../icons/shoppy.jpg";
 import axios from "../axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -66,7 +65,7 @@ function Homecart() {
  {loading ? <div className='loading'><Lottie options={defaultOptions} height={300} width={300}></Lottie></div>:
     <div className='row Addcart'>
       <div className='col-lg-12'>
-      <h3 className='Total'> <img src={logo} alt="" className="imgnav" />Your Cart Items</h3>
+      <h3 className='Total'>Your Cart Items</h3>
       
         <div className="cartitems">
 
