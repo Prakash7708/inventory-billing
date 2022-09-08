@@ -62,7 +62,7 @@ let makePayment =async (token) => {
       //   items,
       //   token
       // }
-   const res= await axios.post(`/payment`,items,{
+           await axios.post(`/payment`,items,{
         headers: {
           'Authorization': `${localStorage.getItem("react_app_token")}`
         }

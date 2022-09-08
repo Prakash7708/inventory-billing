@@ -3,7 +3,7 @@ import Addedcarts from './Addedcarts';
 import '../App.css';
 import axios from "../axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Lottie from 'react-lottie';
 import animationData from '../lotties/97443-loading-gray.json'
 
@@ -44,7 +44,7 @@ function Homecart() {
   let removeCart = async (data) => {
     try {  
     //let res= await axios.post(`/createcart`,data,{
-   const res= await axios.post(`/deletecart`,data,{
+         await axios.post(`/deletecart`,data,{
         headers: {
           'Authorization': `${localStorage.getItem("react_app_token")}`
         }
@@ -56,7 +56,7 @@ function Homecart() {
 
   var total=0
   data.map((input)=>{
-    total+=parseInt(input.price)
+  return  total+=parseInt(input.price)
   })
   
 

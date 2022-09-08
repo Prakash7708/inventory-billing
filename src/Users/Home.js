@@ -67,7 +67,7 @@ function Home() {
     try {
       if (query.length > 3) {
         if (query === "redmi") {
-          if (query.length == 5) {
+          if (query.length === 5) {
             setLoading(true)
             const res = await axios.get("redmi");
             setLoading(false)
@@ -134,7 +134,7 @@ function Home() {
         }}
       );
       
-      if(res.data.message=="🔒Please Login to Continue"){
+      if(res.data.message==="🔒Please Login to Continue"){
         alert(res.data.message)
         navigate("/");
       }else{

@@ -53,12 +53,12 @@ function Billing() {
       
 var total=0
 items.map((input)=>{
-total+=parseInt(input.price)  })
+ return total+=parseInt(input.price)  })
 
 var details=[]
 items.map((input)=>{
-details+=("productname :"+input.productname+"    "+"Categories :"+input.categories+"    "
-+"Seller :"+input.seller+"    ") })
+return details+=("productname :"+input.productname+" "+"Categories :"+input.categories+" "
++"Seller :"+input.seller) })
 
 // const body={
 //   datails:`${details}`,

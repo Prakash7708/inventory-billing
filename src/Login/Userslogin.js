@@ -17,8 +17,8 @@ function Userslogin() {
 
       try {
         let a = "admin";
-        let p = 1234;
-        if ((values.username == a) & (values.password == p)) {
+        let b = "1234";
+        if ((values.username ===a) & (values.password ===b)) {
           navigate("/Admin");
         } else {
           setLoading(true)

@@ -52,7 +52,7 @@ function Adminhome() {
       try {
         if (query.length > 3) {
           if (query === "redmi") {
-            if (query.length == 5) {
+            if (query.length === 5) {
               setLoading(true)
               const res = await axios.get("redmi");
               setData(res.data);

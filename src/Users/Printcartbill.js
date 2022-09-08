@@ -2,14 +2,14 @@ import React from "react";
 import { useEffect, useState, useRef } from "react";
 import axios from "../axios";
 import "../App.css";
-import {  useNavigate, useParams } from "react-router-dom";
+import {  useNavigate} from "react-router-dom";
 // import StripeCheckout from "react-stripe-checkout";
 // import Lottie from "react-lottie";
 // import animationData from "../lotties/97443-loading-gray.json";
 import { useReactToPrint } from "react-to-print";
 function Printcartbill() {
   const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(false);
+  //const [loading, setLoading] = useState(false);
   const componentRef = useRef();
 
   //let dataUpdate=useContext(UserContext);
@@ -26,14 +26,14 @@ function Printcartbill() {
   let buyOne = async () => {
     if (localStorage.getItem("react_app_token")) {
       try {
-        setLoading(true);
+        //setLoading(true);
         const res = await axios.get(`/cartitems`, {
           headers: {
             Authorization: `${localStorage.getItem("react_app_token")}`,
           },
         });
         //alert(res.data)
-        setLoading(false);
+        //setLoading(false);
         setItems(res.data);
       } catch (error) {
         console.log(error);
@@ -46,7 +46,7 @@ function Printcartbill() {
 
   var total = 0;
   items.map((input) => {
-    total += parseInt(input.price);
+  return  total += parseInt(input.price);
   });
 
   return (

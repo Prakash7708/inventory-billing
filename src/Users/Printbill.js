@@ -10,7 +10,7 @@ import { useReactToPrint } from "react-to-print";
 function Printbill() {
 
     const [items, setItems] = useState([]);
-    const[loading,setLoading]=useState(false)
+    //const[loading,setLoading]=useState(false)
     
     //let dataUpdate=useContext(UserContext);
     let navigate = useNavigate();
@@ -27,14 +27,14 @@ function Printbill() {
       let buyOne = async () => {
         if(localStorage.getItem("react_app_token")){
         try {
-          setLoading(true)
+         // setLoading(true)
       const res= await axios.get(`/orderOneitem/${params.id}`,{
         headers: {
           'Authorization': `${localStorage.getItem("react_app_token")}`
         }
       });
       //alert(res.data)
-      setLoading(false)
+     // setLoading(false)
       setItems(res.data)
     }catch (error) {
         console.log(error)
